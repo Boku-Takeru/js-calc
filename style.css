@@ -1,0 +1,33 @@
+.all-box {
+  height: 500px;
+  width: 400px;
+  margin: 20px auto; /* 中央に配置 */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px; /* 角を丸くする */
+  text-align: center;
+}
+
+.display {
+  height: 100px;
+  width: 350px;
+  text-align: right;
+  font-size: 36px;
+  margin: 0 autox1;
+}
+
+.input-form {
+  width: 100%;
+}
+
+.input-form input {
+  font-size: 50px;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  border: none;
+  margin: 8px;
+}
+.solo {
+  padding-bottom: 10px;
+}
