@@ -10,10 +10,11 @@
 
 .display {
   height: 100px;
-  width: 350px;
+  width: 100%;
   text-align: right;
   font-size: 36px;
-  margin: 0 autox1;
+  display: block;
+  margin: 0 auto;
 }
 
 .input-form {
@@ -27,7 +28,15 @@
   height: 80px;
   border: none;
   margin: 8px;
+  /* background-color: #333333; */
 }
 .solo {
   padding-bottom: 10px;
+}
+.operator {
+  background-color: #ff9500;
+}
+
+.clear {
+  background-color: #ff9500;
 }

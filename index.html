@@ -7,36 +7,39 @@
     <title>calc</title>
   </head>
   <body>
-    <form name="calc-main">
+    <form name="calc-main" class="all-box">
+      <!-- 液晶 -->
       <table>
         <td colspan="4">
           <input type="text" class="display" name="display" value="" disabled />
         </td>
       </table>
+
+      <!-- 電卓入力form -->
       <table class="input-form">
         <tr>
           <td><input type="button" value="7" /></td>
           <td><input type="button" value="8" /></td>
           <td><input type="button" value="9" /></td>
-          <td><input type="button" value="÷" /></td>
+          <td><input type="button" value="÷" class="operator" /></td>
         </tr>
         <tr>
           <td><input type="button" value="4" /></td>
           <td><input type="button" value="5" /></td>
           <td><input type="button" value="6" /></td>
-          <td><input type="button" value="×" /></td>
+          <td><input type="button" value="×" class="operator" /></td>
         </tr>
         <tr>
           <td><input type="button" value="1" /></td>
           <td><input type="button" value="2" /></td>
           <td><input type="button" value="3" /></td>
-          <td><input type="button" value="-" /></td>
+          <td><input type="button" value="-" class="solo operator" /></td>
         </tr>
         <tr>
           <td><input type="button" value="0" /></td>
-          <td><input type="button" value="C" /></td>
-          <td><input type="button" value="=" /></td>
-          <td><input type="button" value="+" /></td>
+          <td><input type="button" value="C" class="clear"/></td>
+          <td><input type="button" value="="  /></td>
+          <td><input type="button" value="+" class="operator" /></td>
         </tr>
       </table>
     </form>
