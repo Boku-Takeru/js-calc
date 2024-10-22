@@ -28,7 +28,6 @@
   height: 80px;
   border: none;
   margin: 8px;
-  /* background-color: #333333; */
 }
 .solo {
   padding-bottom: 10px;
@@ -37,6 +36,18 @@
   background-color: #ff9500;
 }
 
-.clear {
-  background-color: #ff9500;
+input:hover {
+  background-color: darkgrey;
+}
+
+.operator:hover {
+  background-color: #e68600;
+}
+
+input:active {
+  background-color: dimgrey;
+}
+
+.operator:active {
+  background-color: #a86810;
 }
