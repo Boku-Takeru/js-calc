@@ -7,7 +7,7 @@
     <title>calc</title>
   </head>
   <body>
-    <form name="calc-main" class="all-box">
+    <form name="calc_main" class="all-box">
       <!-- 液晶 -->
       <table>
         <td colspan="4">
@@ -18,28 +18,63 @@
       <!-- 電卓入力form -->
       <table class="input-form">
         <tr>
-          <td><input type="button" value="7" /></td>
-          <td><input type="button" value="8" /></td>
-          <td><input type="button" value="9" /></td>
-          <td><input type="button" value="÷" class="operator" /></td>
+          <td><input type="button" value="7" onclick="get_value(this)" /></td>
+          <td><input type="button" value="8" onclick="get_value(this)" /></td>
+          <td><input type="button" value="9" onclick="get_value(this)" /></td>
+          <td>
+            <input
+              type="button"
+              value="÷"
+              onclick="get_value(this)"
+              class="operator"
+            />
+          </td>
         </tr>
         <tr>
-          <td><input type="button" value="4" /></td>
-          <td><input type="button" value="5" /></td>
-          <td><input type="button" value="6" /></td>
-          <td><input type="button" value="×" class="operator" /></td>
+          <td><input type="button" value="4" onclick="get_value(this)" /></td>
+          <td><input type="button" value="5" onclick="get_value(this)" /></td>
+          <td><input type="button" value="6" onclick="get_value(this)" /></td>
+          <td>
+            <input
+              type="button"
+              value="×"
+              onclick="get_value(this)"
+              class="operator"
+            />
+          </td>
         </tr>
         <tr>
-          <td><input type="button" value="1" /></td>
-          <td><input type="button" value="2" /></td>
-          <td><input type="button" value="3" /></td>
-          <td><input type="button" value="-" class="solo operator" /></td>
+          <td><input type="button" value="1" onclick="get_value(this)" /></td>
+          <td><input type="button" value="2" onclick="get_value(this)" /></td>
+          <td><input type="button" value="3" onclick="get_value(this)" /></td>
+          <td>
+            <input
+              type="button"
+              value="-"
+              onclick="get_value(this)"
+              class="solo operator"
+            />
+          </td>
         </tr>
         <tr>
-          <td><input type="button" value="0" /></td>
-          <td><input type="button" value="C" class="operator"/></td>
-          <td><input type="button" value="="  /></td>
-          <td><input type="button" value="+" class="operator" /></td>
+          <td><input type="button" value="0" onclick="get_value(this)" /></td>
+          <td>
+            <input
+              type="button"
+              value="C"
+              onclick="get_value(this)"
+              class="operator"
+            />
+          </td>
+          <td><input type="button" value="=" onclick="get_value(this)" /></td>
+          <td>
+            <input
+              type="button"
+              value="+"
+              onclick="get_value(this)"
+              class="operator"
+            />
+          </td>
         </tr>
       </table>
     </form>
