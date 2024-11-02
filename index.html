@@ -11,7 +11,14 @@
       <!-- 液晶 -->
       <table>
         <td colspan="4">
-          <input type="text" class="display-layout" name="display" value="" disabled />
+          <input
+            type="text"
+            class="display-layout"
+            id="display"
+            name="display"
+            value=""
+            disabled
+          />
         </td>
       </table>
 
@@ -25,7 +32,7 @@
             <input
               type="button"
               value="÷"
-              onclick="get_value(this)"
+              onclick="handleOperator('/')"
               class="operator"
             />
           </td>
@@ -38,7 +45,7 @@
             <input
               type="button"
               value="×"
-              onclick="get_value(this)"
+              onclick="handleOperator('*')"
               class="operator"
             />
           </td>
@@ -51,7 +58,7 @@
             <input
               type="button"
               value="-"
-              onclick="get_value(this)"
+              onclick="handleOperator('-')"
               class="solo operator"
             />
           </td>
@@ -62,22 +69,23 @@
             <input
               type="button"
               value="C"
-              onclick="get_value(this)"
+              onclick="clearkey(this)"
               class="operator"
             />
           </td>
-          <td><input type="button" value="=" onclick="get_value(this)" /></td>
+          <td><input type="button" value="=" onclick="epualkey(this)" /></td>
           <td>
             <input
               type="button"
               value="+"
-              onclick="get_value(this)"
+              onclick="handleOperator('+')"
               class="operator"
             />
           </td>
         </tr>
       </table>
     </form>
+
     <script src="calc.js"></script>
   </body>
 </html>
