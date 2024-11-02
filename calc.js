@@ -7,7 +7,7 @@ function updateDisplay(value) {
 }
 
 // 数字ボタンが押されたときの処理
-function get_value(btn) {
+function getValue(btn) {
   currentInput += btn.value;
   updateDisplay(currentInput);
 }
@@ -22,15 +22,15 @@ function handleOperator(operator) {
 }
 
 // クリアボタンが押されたときの処理
-function clearkey() {
+function clearKey() {
   currentInput = "";
   updateDisplay("");
 }
 
 // イコールボタンが押されたときの処理
-function epualkey() {
+function equalKey() {
   try {
-    const result = eval(currentInput.replace("×", "*").replace("÷", "/"));
+    const result = eval(currentInput);
     currentInput = result.toString();
     updateDisplay(currentInput);
   } catch {
