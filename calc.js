@@ -19,6 +19,7 @@ function handleOperator(operator) {
     currentInput += operator;
     updateDisplay(currentInput);
   }
+  
 }
 
 // クリアボタンが押されたときの処理
